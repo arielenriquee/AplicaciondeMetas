@@ -6,15 +6,13 @@ import add from '../../assets/add.svg'
 function Principal({ children }) {
     return (
         <div className={estilos.principal}>
-            <aside className='aside'>
-                <Vinculo href="/lista" texto="Lista de metas" >
-                <img src={list} alt="logo-lista" className='icono' />
+            <aside className={estilos.aside}>
+                <Vinculo href="/lista" texto="Lista de metas" Icono={list}>
                 </Vinculo>
-                <Vinculo href="/crear" texto="Nueva Meta">
-                <img src={add} alt="logo-add"  className='icono'/>
+                <Vinculo href="/crear" texto="Nueva Meta" Icono={add}>
                 </Vinculo>
             </aside>
-            <main className='main'>
+            <main className={estilos.main}>
                 {children}
             </main>
         </div>

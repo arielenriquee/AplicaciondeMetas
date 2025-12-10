@@ -1,17 +1,17 @@
 import copa from '../../assets/metaCopa.svg';
 import user from '../../assets/user.svg';
-import './Encabezado.css';
+import estilos from './Encabezado.module.css';
 
 function Encabezado(){
     return(
-        <header className="contenedor" >
-            <div className="contenedor-logo" >
-                <img src={copa} alt="logo-trofeo" className="logo" />
-                <a href="/" className='titulo' >Metas App</a>
+        <header className={estilos.contenedor}>
+            <div className={estilos.contenedorLogo}>
+                <img src={copa} alt="logo-trofeo" className={estilos.logo} />
+                <a href="/perfil" className={estilos.titulo} >Metas App</a>
             </div>
             <nav>
-                <a href="/perfil" className='vinculo'>
-                    <img src={user} alt="icono-usuario" className="icono" />
+                <a href="/perfil" className={estilos.vinculo}>
+                    <img src={user} alt="icono-usuario" className={estilos.icono} />
                 </a>
                 
             </nav>

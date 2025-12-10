@@ -2,14 +2,18 @@ import './App.css';
 import Encabezado from './Componentes/Compartidos/Encabezado';
 import Principal from './Componentes/Compartidos/Principal';
 import Pie from './Componentes/Compartidos/footer';
+import Lista from './Componentes/lista/lista';
 
 
 
-function App(){
+
+function App() {
     return (
         <div className='App'>
             <Encabezado></Encabezado>
-            <Principal></Principal>
+            <Principal>
+                <Lista></Lista>
+            </Principal>
             <Pie></Pie>
         </div>
     )
