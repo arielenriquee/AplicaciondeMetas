@@ -1,5 +1,5 @@
 import './App.css';
-import Encabezamiento from './Componentes/Compartidos/Encabezamiento';
+import Encabezado from './Componentes/Compartidos/Encabezado';
 import Principal from './Componentes/Compartidos/Principal';
 import Pie from './Componentes/Compartidos/footer';
 
@@ -8,7 +8,7 @@ import Pie from './Componentes/Compartidos/footer';
 function App(){
     return (
         <div className='App'>
-            <Encabezamiento></Encabezamiento>
+            <Encabezado></Encabezado>
             <Principal></Principal>
             <Pie></Pie>
         </div>
