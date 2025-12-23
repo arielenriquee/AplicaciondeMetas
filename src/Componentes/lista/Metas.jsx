@@ -1,18 +1,8 @@
 import estilos from './Meta.module.css';
 
-const metaMock = {
-    "id" : "1",
-    "detalles" : "Correr por 30 minutos",
-    "periodo" : "dia",
-    "eventos" : 1 ,
-    "icono" : "🏃" ,
-    "meta" : 365,
-    "plazo" : "2030-01-01",
-    "completado" : 5
-};
 
-function Meta() {
-    const {icono,eventos,periodo,detalles,meta,completado} = metaMock;
+
+function Meta({icono,eventos,periodo,detalles,meta,completado}) {
     return ( 
        <div className={estilos.meta + " tarjeta"}>
         <div className='flex'>
