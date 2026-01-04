@@ -17,5 +17,5 @@
     @apply block uppercase text-xs font-bold mb-6;
 }
 .input {
-    @apply nm-inset-gray-100 w-full border rounded-xl h-7;
+    @apply nm-inset-gray-100 w-full border rounded-xl h-7 pl-2;
 }
