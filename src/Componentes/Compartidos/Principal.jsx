@@ -7,9 +7,9 @@ function Principal({ children }) {
     return (
         <div className={estilos.principal}>
             <aside className={estilos.aside}>
-                <Vinculo href="/lista" texto="Lista de metas" Icono={list}>
+                <Vinculo to="/lista" texto="Lista de metas" Icono={list}>
                 </Vinculo>
-                <Vinculo href="/crear" texto="Nueva Meta" Icono={add}>
+                <Vinculo to="/nueva" texto="Nueva Meta" Icono={add}>
                 </Vinculo>
             </aside>
             <main className={estilos.main}>
