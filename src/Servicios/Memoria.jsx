@@ -57,7 +57,29 @@ function reductor(estado , accion) {
                 objetos : {...estado.objetos , [id]: accion.meta}
             };
             return nuevoEstado;
+
         };
+        case 'actualizar' : {
+                const id = accion.meta.id;
+                estado.objetos[id] = {
+                    ...estado.objetos[id],
+                    ...accion.meta
+                };
+                const nuevoEstado = {...estado};
+                return nuevoEstado;
+                
+
+            };
+        case 'borrar' : {
+            const id = accion.id;
+            const nuevoOrden = estado.orden.filter(item => item !== id)
+            delete estado.objetos[id];
+            const nuevoEstado = {
+                orden : nuevoOrden,
+                objetos : estado.objetos
+            };
+            return nuevoEstado;
+        }
     }
 }
 
