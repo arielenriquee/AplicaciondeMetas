@@ -4,6 +4,7 @@ import Layout from './Componentes/Compartidos/Layout';
 import Lista from './Componentes/lista/lista';
 import Detalles from './Componentes/nueva/detalles';
 import NoEncontrado from './Componentes/Compartidos/NoEncontrado';
+import Modal from './Componentes/Compartidos/Modal';
 
 
 function App() {
@@ -11,7 +12,10 @@ function App() {
         <Routes>
             <Route path='/' element={<Layout />}>
             <Route index element={<Lista/>}/>
-             <Route path='/lista' element={<Lista />}></Route>
+             <Route path='/lista' element={<Lista />}>
+                <Route path="/lista/:id" element={<Modal/>}></Route>
+             
+             </Route>
              <Route path='/nueva' element={<Detalles />}></Route>
             </Route>
             <Route path="*" element={<NoEncontrado/>}></Route>
